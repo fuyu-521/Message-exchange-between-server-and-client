@@ -13,10 +13,10 @@ def get_mail_server(sender):
 # index() 方法检测字符串中是否包含子字符串 str ,此处提取出qq.com,返回stmp.qq.com
 
 port = '25'   # SMTP协议默认端口是25
-sender = '2305527620@qq.com' # 填写发送方
+sender = '发送方qq@qq.com' # 填写发送方
 mail_server = get_mail_server(sender)
-sender_pass = 'toxwpvgalbdjebbb'  # 注意是授权码,而不是登录密码,需要在邮箱端先获取
-receiver = '1990513103@qq.com'# 填写接收方
+sender_pass = 'qq邮箱设置内寻得'  # 注意是授权码,而不是登录密码,需要在邮箱端先获取
+receiver = '接收方qq@qq.com'# 填写接收方
 
 
 # 第一个参数mail_msg就是邮件正文，
