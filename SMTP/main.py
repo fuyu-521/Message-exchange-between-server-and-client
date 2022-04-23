@@ -23,11 +23,11 @@ receiver = '接收方qq@qq.com'# 填写接收方
 # 第二个参数是MIME的subtype，传入'plain'表示纯文本，最终的MIME就是'text/plain'，
 # 最后一定要用utf-8编码保证多语言兼容性。
 # Header对象编码文本，包含utf-8编码信息和Base64编码。
-mail_msg = '发给自己的邮件。'
+mail_msg = '此处为邮件正文'
 msg = MIMEText(mail_msg, 'plain', 'utf-8')
 msg['From'] = sender
 msg['To'] = receiver
-msg['Subject'] = Header('来自浮雨的个人计算机', 'utf-8')
+msg['Subject'] = Header('来自123的个人计算机（此处为邮件标题）', 'utf-8')
 
 try:
     server = SMTP(mail_server, port)
